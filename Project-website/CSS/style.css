@@ -1,26 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 html{
     font-family: Exo2, Arial, Helvetica, sans-serif;
 }
 
-.pagecolor {
-    background-color: #1d1c21;
-}
-
 ol, ul {
     list-style: none;
-    padding: 0px;
 }
+
+.pagecolor {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(0deg, #595958 -40%, #1d1c21 40%) ;   
+}
+
 .mainMenu {
     display: flex;
-    justify-content: space-evenly;
-    
-    
+    justify-content: space-evenly; 
 }
 .mainMenu li {
     text-align: center;
     width: 120px;
     float:left;
-    
+    margin-top: 40px;
 }
 
 .mainMenu a{
@@ -30,5 +35,52 @@ ol, ul {
 .mainMenu a.active{
     color: #c7b75d;
     text-decoration: underline;
-
 }
+
+
+.cornerelementleft{
+    position: absolute;
+    top: 32.5%;
+    left: 20%;
+    height: 150px;  /* hoe maak ik dit schaalbaar??? */
+    width: 150px;   
+    background: linear-gradient(135deg, #c7b75d -15%, #595958 90% );
+    border-top-left-radius: 7px;
+}
+
+.cornerelementright{
+    position: absolute;
+    right: 20%;
+    bottom: 32.5%;
+    height: 150px;
+    width: 150px;   
+    background: linear-gradient(315deg, #c7b75d -15%, #595958 90% );
+    border-bottom-right-radius: 7px;
+}
+
+.cornerelemetshape1{
+    clip-path: polygon(90% 5%, 5% 5%, 5% 90%, 0% 100%, 0 0, 100% 0);
+}
+
+.cornerelemetshape2{
+    clip-path: polygon(95% 10%, 100% 0%, 100% 100%, 0% 100%, 10% 95%, 95% 95%);
+}
+
+.textcenter{
+    display: flex;
+    flex-direction: column;  /* kan dit op een andere manier? nu staat er een scroll bar en nier exact center*/
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+  
+}
+.texthome{
+    font-weight: 900;
+    font-size: clamp(15px, 3vw, 900px);
+    color: white
+}
+
+
+
+
