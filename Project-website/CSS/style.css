@@ -18,8 +18,11 @@ ol, ul {
 }
 
 .mainMenu {
+    position: absolute;
     display: flex;
     justify-content: space-evenly; 
+    width: 100vw;
+    
 }
 .mainMenu li {
     text-align: center;
@@ -67,17 +70,18 @@ ol, ul {
 }
 
 .textcenter{
+    position: absolute;
     display: flex;
     flex-direction: column;  /* kan dit op een andere manier? nu staat er een scroll bar en nier exact center*/
     justify-content: center;
     align-items: center;
     height: 100vh;
-    
+    width: 100vw;
   
 }
 .texthome{
     font-weight: 900;
-    font-size: clamp(15px, 3vw, 900px);
+    font-size: clamp(15px, 3vw, 600px);
     color: white
 }
 
