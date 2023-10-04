@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .fieldlabel{
+            font-size: 12px;
+            align-items: left;
+        }
+        .legend{
+            background-color: maroon;
+            color: white;
+            padding: 5px;
+           
+        }
+        form{
+            width: 25%;
+        }
+        .submit{
+            width: 100%;
+            background-color: beige;
+            padding: 5px;
+            font-size: large;
+        }
+        .color{
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <form method="post" action="https://tm-statweb.be/forms.php">
+        <fieldset class="color"> 
+            <legend class="legend">Geslacht</legend>
+        <label class="fieldlabel" for="Man">Man</label>
+        <input type="radio" id="Man" name="geslacht" value="Man">
+
+        <label class="fieldlabel" for="Vrouw">Vrouw</label>
+        <input type="radio" id="Vrouw" name="geslacht" value="Vrouw">
+
+        <label class="fieldlabel" for="Other">Other</label>
+        <input type="radio" id="Other" name="geslacht" value="Other">
+
+        </fieldset>
+
+        <br>
+        <fieldset class="color">
+            <legend class="legend">Kluer ogen</legend>
+        <br>
+        <label class="fieldlabel" for="Ogen">Bruin</label>
+        <input type="radio" id="Bruin" name="Ogen" value="Bruin">
+
+        <label class="fieldlabel" for="Ogen">Groen</label>
+        <input type="radio" id="Groen" name="Ogen" value="Groen">
+
+        <label class="fieldlabel" for="Ogen">Blauw</label>
+        <input type="radio" id="Blauw" name="Ogen" value="Blauw">
+        
+        <label class="fieldlabel" for="Ogen">Grijs</label>
+        <input type="radio" id="Grijs" name="Ogen" value="Grijs">
+        </fieldset>
+        <br>      
+        <input class="submit" type="submit" value="registreren">
+    </form>
+</div>
+    
+</body>
+</html>

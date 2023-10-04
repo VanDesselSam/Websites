@@ -1,0 +1,12 @@
+oef 2 vrqgen
+
+doctype HTML
+
+title : SportFocus vzw - Zwemlessen - Sportkampen - Voetbal
+
+Charset UTF-8
+
+not valid witten errors in 
+
+
+favicon is het klijn icoontje in je tablad
