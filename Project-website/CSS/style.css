@@ -7,6 +7,13 @@ html{
     font-family: Exo2, Arial, Helvetica, sans-serif;
 }
 
+.logo{
+    position: absolute;
+    width: 100px;;
+    top: 60px;
+    left: 20px;
+}
+
 ol, ul {
     list-style: none;
 }
@@ -41,20 +48,20 @@ ol, ul {
 }
 
 
-.cornerelementleft{
+.cornerelementlefthome{
     position: absolute;
-    top: 32.5%;
+    top: 30%;
     left: 20%;
-    height: 150px;  /* hoe maak ik dit schaalbaar??? */
+    height: 150px; 
     width: 150px;   
     background: linear-gradient(135deg, #c7b75d -15%, #595958 90% );
     border-top-left-radius: 7px;
 }
 
-.cornerelementright{
+.cornerelementrighthome{
     position: absolute;
     right: 20%;
-    bottom: 32.5%;
+    bottom: 30%;
     height: 150px;
     width: 150px;   
     background: linear-gradient(315deg, #c7b75d -15%, #595958 90% );
@@ -69,22 +76,207 @@ ol, ul {
     clip-path: polygon(95% 10%, 100% 0%, 100% 100%, 0% 100%, 10% 95%, 95% 95%);
 }
 
-.textcenter{
-    position: absolute;
+.textcenter{   
     display: flex;
-    flex-direction: column;  /* kan dit op een andere manier? nu staat er een scroll bar en nier exact center*/
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
     height: 100vh;
-    width: 100vw;
-  
 }
-.texthome{
-    font-weight: 900;
+
+.textscalehome{
     font-size: clamp(15px, 3vw, 600px);
     color: white
 }
 
+.homeimg{
+    border-radius: 100%;
+    width: 100px
+}
+
+.textscaleervaring{
+    padding: 20%;
+    font-size: clamp(15px, 3vw, 20px);
+    color: white
+    
+}
+
+.cornerelementleftervaring{
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    height: 150px; 
+    width: 150px;   
+    background: linear-gradient(135deg, #c7b75d -15%, #595958 90% );
+    border-top-left-radius: 7px;
+}
+
+.cornerelementrightervaring{
+    position: absolute;
+    right: 15%;
+    bottom: 30%;
+    height: 150px;
+    width: 150px;   
+    background: linear-gradient(315deg, #c7b75d -15%, #595958 90% );
+    border-bottom-right-radius: 7px;
+}
+
+.cornerelementleftcv{
+    position: absolute;
+    top: 150px;
+    left: 15%;
+    height: 150px; 
+    width: 150px;   
+    background: linear-gradient(135deg, #c7b75d -15%, #595958 90% );
+    border-top-left-radius: 7px;
+}
+
+.cornerelementrightcv{
+    position: absolute;
+    right: 15%;
+    bottom: 150px;
+    height: 150px;
+    width: 150px;   
+    background: linear-gradient(315deg, #c7b75d -15%, #595958 90% );
+    border-bottom-right-radius: 7px;
+}
+
+.cornerelementlefthobby{
+    position: absolute;
+    top: 100px;
+    left: 120px;
+    height: 150px; 
+    width: 150px;   
+    background: linear-gradient(135deg, #c7b75d -15%, #595958 90% );
+    border-top-left-radius: 7px;
+}
+
+.cornerelementrighthobby{
+    position: absolute;
+    right: 120px;
+    bottom: 100px;
+    height: 150px;
+    width: 150px;   
+    background: linear-gradient(315deg, #c7b75d -15%, #595958 90% );
+    border-bottom-right-radius: 7px;
+}
+
+.textscalehobby{
+    padding-left: 10% ;
+    padding-right: 10%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-size: clamp(9px, 0.7vw, 15px);
+    color: white
+    
+}
+
+#textcenterhobby{   
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 125px;
+    margin-right: 125px;
+}
+
+.left{
+    float: left;
+    color:  white;
+}
+
+.hobbyimgleft{
+    float: left;
+    margin-right: 2%;
+    width: 25%;
+}
+
+.hobbyimgright{
+    float: right;
+    margin-left: 2%;
+    width: 25%;
+}
+
+.textscalecv{
+    color: white;
+}
+
+/* CSS voor CV*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+#textcentercv{   
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+.full {
+	width: 60%;
+	max-width: 1000px;
+	min-height: 100px;
+	margin: 0px;
+	display: grid;
+	grid-template-columns: 2fr 4fr;
+}
+.left {
+	position: initial;
+	background: linear-gradient(70deg, #c7b75d -50%, #595958 50% );
+	padding: 20px;
+
+}
+.right {
+	position: initial;
+	background: linear-gradient(70deg, #595958 50%, #c7b75d 170% );
+	padding: 20px;
+
+}
+.image, .Contact, .Skills, .Language, .Hobbies, .title, 
+.Summary, .Experience, .Education, .project {
+	margin-bottom: 30px;
+}
+tr{
+    text-align: left;
+}
+/* CSS voor CV*/
 
 
+/* Contact CSS*/
+#textcentercontact{   
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+label{
+    color: white;
+}
+.hcolor{
+    color: white;
+}
+.area {
+    width: 60%; 
+}
+input, select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px;
+    resize: vertical 
+  }
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
 
