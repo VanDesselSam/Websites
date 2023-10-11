@@ -1,0 +1,17 @@
+.c1{
+    width: 30%;
+    padding: 15px;
+    float: left;
+}
+.c2{
+    width: 60%;
+    padding: 15px;
+    float: left;
+}
+
+@media (width <=600px) {
+    .c1, .c2{
+        width: 100%;
+    }
+    
+}
