@@ -8,10 +8,11 @@
     margin: 0px;
     padding: 0px;
 }
+body, html{
+    overflow: hidden;
+}
 body{
     background-color: black;
-    overflow: hidden;
-    
 }
 .row{
     display: inline-flex;
@@ -122,6 +123,20 @@ ol, ul {
     background: linear-gradient(315deg, #c7b75d -15%, #595958 90% );
     border-bottom-right-radius: 7px;
 }
+
+@media screen and (max-width: 600px){
+    .cornerelementlefthome{
+        position: absolute;
+        left: 5%;
+        top:10%;
+    }
+    .cornerelementrighthome{
+        position: absolute;
+        right: 5%;
+        bottom: 5%;
+    }
+}
+
 .cornerelemetshape1{
     clip-path: polygon(90% 5%, 5% 5%, 5% 90%, 0% 100%, 0 0, 100% 0);
 }
@@ -129,7 +144,7 @@ ol, ul {
     clip-path: polygon(95% 10%, 100% 0%, 100% 100%, 0% 100%, 10% 95%, 95% 95%);
 }
 .textcenter{   
-    position: fixed;
+    position: absolute;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column; 
@@ -145,8 +160,59 @@ ol, ul {
 }
 .textscalehome{
     font-size: clamp(15px, 3vw, 600px);
-    color: white
+    
+    animation: lights 5s 750ms linear infinite;
 }
+
+/*lights */
+@keyframes lights {
+  0% {
+    color: hsl(230, 40%, 80%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+      -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+
+  30% { 
+    color: hsl(230, 80%, 90%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+
+  40% { 
+    color: hsl(230, 100%, 95%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 90%, 0.5),
+      -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+      0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+  }
+
+  70% {
+    color: hsl(230, 80%, 90%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+
+  100% {
+    color: hsl(230, 40%, 80%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+      1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+}
+/*-------------------------------------------------*/
+
 .homeimg{
     border-radius: 100%;
     width: 100px
@@ -174,7 +240,7 @@ ol, ul {
     color: white;
 }
 #textcenterervaring{   
-    position: fixed;
+    position: absolute;
     display: flex;
     flex-wrap: wrap; 
     justify-content: center;
@@ -206,6 +272,24 @@ ol, ul {
 }
 #textcenterervaring::-webkit-scrollbar-button:hover {
     background-color: #999999;
+}
+@media screen and (max-width: 600px){
+    .cornerelementleftervaring{
+        position: absolute;
+        left: 5%;
+        top:10%;
+    }
+    .cornerelementrightervaring{
+        position: absolute;
+        right: 5%;
+        bottom: 5%;
+    }
+    #textcenterervaring{   
+        left: 10%;
+        right: 10%;
+        top:15%;
+        bottom: 10%;
+    }
 }
 .cornerelementlefthobby{
     position: absolute;
@@ -271,6 +355,24 @@ ol, ul {
     margin-left: 2%;
     width: 40%;
 }
+@media screen and (max-width: 600px){
+    .cornerelementlefthobby{
+        position: absolute;
+        left: 5%;
+        top:10%;
+    }
+    .cornerelementrighthobby{
+        position: absolute;
+        right: 5%;
+        bottom: 5%;
+    }
+    #textcenterhobby{  
+        top: 15%;
+        bottom: 10%;
+        left: 10%;
+        right: 10%;
+    }
+}
 .cornerelementleftcv{
     position: absolute;
     top: 15%;
@@ -289,8 +391,9 @@ ol, ul {
     background: linear-gradient(315deg, #c7b75d -15%, #595958 90% );
     border-bottom-right-radius: 7px;
 }
+
 #textcentercv{   
-    position: fixed;
+    position: absolute;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -301,6 +404,7 @@ ol, ul {
     margin: auto;
     overflow-y: auto;
 }
+
 #textcentercv::-webkit-scrollbar {
     width: 10px;
     height: 10px;
@@ -339,7 +443,47 @@ ol, ul {
 	position: initial;
 	background: #595958;
 	padding: 20px;
-    color: w;
+   
+}
+@media screen and (max-width: 600px){
+
+    .cornerelementleftcv{
+        position: absolute;
+        left: 5%;
+        top:10%;
+    }
+    .cornerelementrightcv{
+        position: absolute;
+        right: 5%;
+        bottom: 5%;
+    }
+    #textcentercv{   
+        left: 10%;
+        right: 10%;
+        top:15%;
+        bottom: 10%;
+    }
+    .full {
+
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 2fr 4fr;
+    }
+    .leftcv {
+        position: initial;
+        background: linear-gradient(68deg, #c7b75d 50%, #595958 50% );
+        padding: 20px;
+    }
+    .rightcv {
+        position: initial;
+        flex-direction: column;
+        background: #595958;
+        padding: 20px;
+       
+    }
+
+    
 }
 caption{
    text-align: start;
@@ -371,40 +515,19 @@ tr{
     border-bottom-right-radius: 7px;
 }
 #textcentercontact{   
-    position: fixed;
+    position: absolute;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column; 
     justify-content: center;
     align-items: center;
-    left: 10%;
-    right: 10%;
+    left: 20%;
+    right: 20%;
     top:15%;
     bottom: 15%;
     margin: auto;
-    overflow-y: auto;
 
-}
-#textcentercontact::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-}
-#textcentercontact::-webkit-scrollbar-thumb {
-    background: #c7b75d;
-    border: 1px solid black;
-    border-radius: 10px;
-}
-#textcentercontact::-webkit-scrollbar-track {
-    background-color: rgb(175, 175, 175);
-    border-radius: 10px;
-}
-#textcentercontact::-webkit-scrollbar-button:single-button {
-    background:  #c7b75d;
-    border: 1px solid black;
-    border-radius: 10px;
-}
-#textcentercontact::-webkit-scrollbar-button:hover {
-    background-color: #999999;
+
 }
 label{
     color: white;
@@ -413,7 +536,8 @@ label{
     color: white;
 }
 .area {
-    width: 60%; 
+    width: 100%; 
+    padding: 5%;
 }
 input, select, textarea {
     width: 100%; 
@@ -428,6 +552,9 @@ input, select, textarea {
   input[type=submit]:hover {
     background-color: #45a049;
   }
+  textarea{
+    height: 200px;
+  }
 
 .imgmargin{
     margin: 20px;
@@ -438,6 +565,34 @@ input, select, textarea {
 }
 .iconpos{
     position: fixed;
-    right: 30px;
-    bottom: 20px;
+    right: 8%;
+    bottom: 7%;
+}
+@media screen and (max-width: 600px){
+    .cornerelementleftcontact{
+        position: absolute;
+        left: 5%;
+        top:10%;
+    }
+    .cornerelementrightcontact{
+        position: absolute;
+        right: 5%;
+        bottom: 5%;
+    }
+    #textcentercontact{   
+
+        left: 10%;
+        right: 10%;
+        top:15%;
+        bottom: 15%;
+    
+    }
+    textarea{
+        height: 80px;
+      }
+      .iconpos{
+        position: fixed;
+        left: 3%;
+        bottom: 3%;
+    }
 }
