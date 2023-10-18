@@ -20,3 +20,11 @@
     color: #c7b75d !important;
     padding-left: 2%;
 }
+
+.homeimg{
+    width: 7em;
+    border-radius: 100%;
+}
+.cardHeight{
+    height: 100% !important;
+}
