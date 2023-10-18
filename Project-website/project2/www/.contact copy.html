@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>portfoliowebsite</title>
+        <link rel="icon" type="image/x-icon" href="img/logo.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/style.css">
+
+    </head>
+
+    <body>
+        <div>
+            <div class="maincontainer">
+            <nav>
+                <ul class="mainMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="ervaring.html">Ervaring</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="hobby.html">Hobby's</a></li>
+                    <li><a class = "active" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="container" id="textcentercontact">
+                <form class="area" method="post" action="https://tm-statweb.be/sendmail.php">
+                    <h1 class="hcolor">Get in Contact</h1>
+                    <br>
+                    <label for="fname">First Name</label>
+                    <br>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+                
+                    <label for="lname">Last Name</label>
+                    <br>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+                
+                    <label for="mail">Email</label>
+                    <br>
+                    <input type="email" id="mail" name="Email" placeholder="Your Email.." required>
+                
+                    <label for="subject">Subject</label>
+                    <br>
+                    <textarea id="subject" name="subject" placeholder="Write something.." required></textarea>
+                    <br>
+                    <input type="submit" value="Submit">
+                    
+                    <input type="hidden" name="studentemail" value="r0743194@student.thomasmore.be">
+                </form>
+              </div>
+
+            <div class="cornerelementleftcontact cornerelemetshape1"></div>
+            <div class="cornerelementrightcontact cornerelemetshape2"></div> 
+            <div class="iconpos">
+                <a href="https://www.linkedin.com/in/sam-van-dessel-5650001a2/" target="_blank">
+
+                    <img id="iconsize" src="img/linkedin-svgrepo-com.svg" alt="LinkedIn icon">
+                    
+                </a>
+            </div>
+        </div>  
+    </div>   
+    </body>
+</html>

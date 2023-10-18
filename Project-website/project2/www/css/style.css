@@ -1,0 +1,22 @@
+.navtext {
+    color: green !important;
+}
+
+.bg-dark{
+ background-color: rgb(72, 72, 72) !important;
+}
+
+.active{
+    color: #c7b75d !important;
+    text-decoration: underline;
+}
+.navbar-nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navbar-brand{
+    color: #c7b75d !important;
+    padding-left: 2%;
+}
