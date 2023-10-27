@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>portfoliowebsite</title>
+  <link rel="icon" type="image/x-icon" href="img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="/project2/css/style.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark navtext">
+        <a class="navbar-brand">SVD</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarsExample05">
+          <ul class="navbar-nav mr-auto spaceEven">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ervaring.html">Ervaring</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cv.html">CV</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="hobby.html">Hobby's</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contact.html">Contact</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+<div class="slide">
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-6 mb-5">
+              <div class="text-back p-3">
+                <p><b>Name:</b> Sam van dessel</p>
+                <p><b>Education:</b> graduaat programeren</p>
+                <p><b>Address:</b> Antwerpsestraat 99, 2500 Lier</p>
+                <p><b>Country:</b> Belgium</p>
+                <p><b>Mail:</b> Student@thomasMore.be</p>
+                <p><b>Tel:</b> 123456789</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <form class="text-back p-3" method="post" action="https://tm-statweb.be/sendmail.php">
+              <h1>Get in Contact</h1>
+              <br>
+              <label for="fname">First Name</label>
+              <br>
+              <input class="w-100 rounded" type="text" id="fname" name="firstname" placeholder="Your name.." required>
+              <br>
+              <label for="lname">Last Name</label>
+              <br>
+              <input class="w-100 rounded" type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+              <br>
+              <label for="mail">Email</label>
+              <br>
+              <input class="w-100 rounded" type="email" id="mail" name="Email" placeholder="Your Email.." required>
+              <br>
+              <label for="selector">Intrest</label>
+              <br>
+              <select class="w-100 rounded" id="selector" name="selector">
+                <option value="C#">C#</option>
+                <option value="SQL">SQL</option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="Bootstrap">Bootstrap</option>
+              </select>
+              <br>
+              <label  for="subject">Subject</label>
+              <br>
+              <textarea class="w-100 subject-height rounded" id="subject" name="subject" placeholder="Write something.." required></textarea>
+              <br>
+              <input class="mt-3 w-100 rounded mb-2" type="submit" value="Submit">
+              <br>
+              <input type="hidden" name="studentemail" value="r0743194@student.thomasmore.be">
+          </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <p class="col-md-4 mb-0">&copy;Sam Van Dessel</p>
+      
+          <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+          </a>
+      
+          <ul class="nav col-md-2 justify-content-center text-back">
+            <li class="nav-item"><a href="https://www.linkedin.com/in/sam-van-dessel-5650001a2/" class="nav-link px-2" target="_blank"><img src="img/linkedin.svg" alt="linkedin"></a></li>
+            <li class="nav-item"><a href="https://www.facebook.com/ThomasMoreBE/?locale=nl_BE" class="nav-link px-2" target="_blank"><img src="img/facebook.svg" alt=""></a></li>
+            <li class="nav-item"><a href="https://twitter.com/i/flow/login?redirect_after_login=%2FThomasMoreBE" class="nav-link px-2 text-muted" target="_blank"><img src="img/twitter-x.svg" alt=""></a></li>
+          </ul>
+        </footer>
+        </div>
+</div>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
